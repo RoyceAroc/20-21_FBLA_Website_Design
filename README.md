@@ -1,2 +1,5 @@
-# 20-21_FBLA_Website_Design
-An entry for RLC regarding a website for a photographer
+# Chris Photography
+Entry for FBLA Website Design RLC | By: Royce, Chittebbayi, and Surya
+
+### Deployment 
+Website deployed [chrisphotography.roydero.com](https://chrisphotography.roydero.com)
