@@ -66,7 +66,7 @@ function localiseLanguage(language) {
 			}
 		}
 	};
-	xmlhttp.open("GET", "components/languages.json", true);
+	xmlhttp.open("GET", "./components/js/languages.json", true);
 	xmlhttp.send();
 }
 
