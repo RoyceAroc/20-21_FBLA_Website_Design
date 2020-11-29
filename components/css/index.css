@@ -447,7 +447,7 @@ video::-webkit-media-controls {
   display: none;
 }
 .add-flex .stuffed-cherries {
-  background: url("/components/graphics/chrisedwards.PNG") no-repeat center center;
+  background: url("./components/graphics/chrisedwards.PNG") no-repeat center center;
   background-size: cover;
   height: 315px;
   width: 320px;
