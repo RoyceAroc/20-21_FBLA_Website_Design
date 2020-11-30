@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src="./components/js/layzr.min.js"></script>
   <link rel='stylesheet' href='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -15,8 +16,16 @@
 <body>
   <div id="arrow" style="display: none;background-color: black; opacity:0.7;z-index: 100;width:100%; height:100%;position: fixed;"></div>
 <header>
+  <div class="alone" style="position: relative;width: 100%; height: 100%;top:0;z-index: -1;">
+    <img style="top:0; left:0;position: absolute; width: 50%; "  class="img-top" src="https://chrisandruth.com/wp-content/uploads/2020/04/tulum-wedding-photographer-2-1.jpg" ></img>
 
-  <nav>
+    <img style="top:0; right:0;position: absolute; width: 50%; " class="img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tcx120119amandahearst001-1575402839.jpg"></img>
+    <img style="bottom:0px; right:0;position: absolute; width: 50%; " class="img-top img-bottom" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hbz-prince-harry-meghan-markle-wedding-portrait2-1526935717.jpg"></img>
+    <img style="bottom:0px; left:0;position: absolute; width: 50%; " class="img-top img-bottom" src="https://www.niagaraparks.com/media/2016/11/Lindsay-Dave-Wedding-31.jpg"></img>
+    
+  
+</div>
+  <nav >
   
    <h2><a href="" id="logo">Chris 📸</a></h2>
    <button class="nav-button fa fa-bars"></button>
@@ -36,18 +45,20 @@
     </div>
   </nav>
 
-  
+
   <div id="object" class="center">
-    <h1 class="alex-brush">Chris</h1>
-    <h2 id="termPhotography"></h2>
-    <span id="asterisk">*</span>
-    <p id="keyWords"></p>
+    <section id="child-2" style="position: absolute; margin-top: 3vh;">
+      <h1 class="alex-brush">Chris</h1>
+      <h2 id="termPhotography"></h2>
+      <span id="asterisk"></span>
+      <p id="keyWords"></p>
+  </section>
   </div>
   
   <!--We were gonna remove the anim $(this).removeClass("run-animation").addClass("run-animation");-->
 </header>
 
-<section class="add-padding add-flex">
+<section style="background-color: white;" class="add-padding add-flex">
   <div class="center-text">
     <h1 class="alex-brush"><span class="custom-font">Discover</span><br />MY STORY</h1>
     <h2>*</h2>
@@ -108,7 +119,7 @@ zoom: 46.3%;
 </video>
 </section>
 
-<section class="add-flex reservation-section">
+<section style="background-color: white;"  class="add-flex reservation-section">
   <div class="center-text add-padding">
     <h1><span class="custom-font alex-brush">Adventure</span><br />Interested?</h1>
     <h2>*</h2>
@@ -117,8 +128,8 @@ zoom: 46.3%;
 	  <a href="pricing.html">Package Pricing</a>
   </div>
   <div>
-    <img src="https://images-na.ssl-images-amazon.com/images/I/91X-TvRNb6L._AC_SL1500_.jpg" data-aos="fade-up" data-aos-delay="300"/>
-    <img src="https://i.weddingomania.com/2017/04/02-vertical-doily-garlands-as-a-wedding-backdrop.jpg" data-aos="fade-down" data-aos-delay="300"/>
+    <img class="a" src="https://images-na.ssl-images-amazon.com/images/I/91X-TvRNb6L._AC_SL1500_.jpg" data-aos="fade-up" data-aos-delay="300"/>
+    <img class="a" src="https://i.weddingomania.com/2017/04/02-vertical-doily-garlands-as-a-wedding-backdrop.jpg" data-aos="fade-down" data-aos-delay="300"/>
   </div>
 </section>
 

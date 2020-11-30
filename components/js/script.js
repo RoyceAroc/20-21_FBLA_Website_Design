@@ -1,3 +1,4 @@
+
 $(document).on('scroll', function() {
 	if(document.getElementById('vid')) {
 		if ($(this).scrollTop() >= $('#vid').position().top) {
@@ -10,8 +11,10 @@ $(document).on('scroll', function() {
 $(document).ready(function() {
   $('button').on('click', function() {
     if($(this).hasClass('nav-button')) {
+      document.getElementById("object").style.display = "none";
       $('nav div').addClass('show');
     } else if($(this).hasClass('exit-menu')) {
+      document.getElementById("object").style.display = "block";
       $('nav div').removeClass('show');
     } 
     else if($(this).hasClass('to-top')) {
@@ -166,3 +169,17 @@ function four() {
       elements[i].style.flex = "25%";
     }
   }
+  const height = window.innerHeight|| document.documentElement.clientHeight|| 
+  document.body.clientHeight;
+  const width = document.body.clientWidth;
+  console.log(document.getElementById("child-2").style.width);
+  if(width <1201) {
+ document.getElementById("object").style.left = (width-500)/2 + "px";}
+var series = document.getElementsByClassName("img-top");
+for(i=0; i<series.length; i++) {
+  series[i].style.height = height/2 + "px";
+}
+var series2 = document.getElementsByClassName("img-bottom");
+for(i=0; i<series2.length; i++) {
+  series2[i].style.top = height/2 + "px";
+}
