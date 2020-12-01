@@ -11,10 +11,14 @@ $(document).on('scroll', function() {
 $(document).ready(function() {
   $('button').on('click', function() {
     if($(this).hasClass('nav-button')) {
-      document.getElementById("object").style.display = "none";
+      if(document.getElementById("object")){
+      document.getElementById("object").style.display = "none";}
+      if(document.getElementById("objectb")){
+        document.getElementById("objectb").style.opacity="0";}
       $('nav div').addClass('show');
     } else if($(this).hasClass('exit-menu')) {
-      document.getElementById("object").style.display = "block";
+      if(document.getElementById("objectb")){
+        document.getElementById("objectb").style.opacity="1";}
       $('nav div').removeClass('show');
     } 
     else if($(this).hasClass('to-top')) {
@@ -172,7 +176,7 @@ function four() {
   const height = window.innerHeight|| document.documentElement.clientHeight|| 
   document.body.clientHeight;
   const width = document.body.clientWidth;
-  console.log(document.getElementById("child-2").style.width);
+  if( document.getElementById("object")) {
   if(width <1201) {
  document.getElementById("object").style.left = (width-500)/2 + "px";
 } else {
@@ -185,3 +189,4 @@ var series2 = document.getElementsByClassName("img-bottom");
 for(i=0; i<series2.length; i++) {
   series2[i].style.top = height/2 + "px";
 }
+  }
