@@ -156,30 +156,32 @@ header .center {
   line-height: 0;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 header .center h1 {
   margin-top: 11vh;
-  margin-left: 15vh;
+ 
   font-family: "Alex Brush", cursive !important;
   color: #be8040;
-  font-size: 11vh;
-  margin-bottom: 5vh;
+  font-size: 800%;
+  margin-bottom: 60px;
 }
 header .center h2 {
-  margin-left: 15.2vh;
+
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 2vh;
-  margin-bottom: 3vh;
+  font-size: 140%;
+  margin-bottom: 30px;
 }
 header .center #asterisk {
-  margin-left: 8.2vh;
+ 
 	width: 30%;
 	left: 35%;
 	position: relative;
   color: #be8040;
   line-height: 0.5;
-  font-size: 5vh;
+  font-size: 300%;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -202,10 +204,10 @@ header .center #asterisk:after {
   margin-left: 10px;
 }
 header .center p {
-  margin-left: 15vh;
+ 
   text-transform: uppercase;
   margin-top: 5px;
-  font-size: 2vh;
+  font-size: 100%;
   font-weight: bold;
   letter-spacing: 3px;
 }

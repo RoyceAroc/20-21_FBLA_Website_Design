@@ -174,7 +174,9 @@ function four() {
   const width = document.body.clientWidth;
   console.log(document.getElementById("child-2").style.width);
   if(width <1201) {
- document.getElementById("object").style.left = (width-500)/2 + "px";}
+ document.getElementById("object").style.left = (width-500)/2 + "px";
+} else {
+ }
 var series = document.getElementsByClassName("img-top");
 for(i=0; i<series.length; i++) {
   series[i].style.height = height/2 + "px";
