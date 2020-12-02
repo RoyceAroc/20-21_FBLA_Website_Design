@@ -2,9 +2,10 @@
   <head>
     <meta charset="utf-8"></meta>
     <title> Portfolio | Chris Photography </title>
-    <link rel="icon" type="image/png" href="/files/graphics/favicon.png">
-    <link href="components/files.css" rel="stylesheet" type="text/css">
-    <link href="components/central.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="components/graphics/favicon.png">
+    <link href="components/css/all.css" rel="stylesheet" type="text/css">
+    <link href="components/css/portfolio.css" rel="stylesheet" type="text/css">
+    <link href="components/css/files.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -12,28 +13,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   </head>
-<body>
+<body style="background-image: none;">
 <header>
   <nav>
-    <h2><a href="/" id="logo">Chris 📸</a></h2>
-    <button class="nav-button fa fa-bars"></button>
+    <h2><a style="z-index: -1; position: relative;" href="/" id="logo">Chris 📸</a></h2>
+    <button style="right:20px;position: fixed;" class="nav-button fa fa-bars"></button>
     <div>
 <!--     <ul> -->
       <ul>
         <button class="exit-menu fa fa-times"></button>
         <li><a id="navContentA" href="/"></a></li>
-        <li><a id="navContentAA" href="about"></a></li>
-        <li><a id="navContentB" href="portfolio" class="active"></a></li>
-        <li><a id="navContentC" href="reserve"></a></li>
-        <li><a id="navContentD" href="pricing"></a></li>
-        <li><a id="navContentE" href="contact"></a></li>
+        <li><a id="navContentAA" href="about.html"></a></li>
+        <li><a id="navContentB" href="portfolio.html" class="active"></a></li>
+        <li><a id="navContentC" href="reserve.html"></a></li>
+        <li><a id="navContentD" href="pricing.html"></a></li>
+        <li><a id="navContentE" href="contact.html"></a></li>
       </ul>
 <!--     </ul> -->
     </div>
   </nav>
-  <center><h1 style="color: white;">Portfolio</h1></center>
 <!-- Photo Grid -->
-<div class="row"> 
+<div style="top: 80px;position: relative;z-index: -1" class="row"> 
   <div class="column">
     <img src="https://www.brides.com/thmb/978QZhbiThTo_FBjHCdkJAZZgCo=/800x533/filters:fill(auto,1)/PHOTOBYSERGIOSANDONA-0b0f3c5cf1414ac79cab53981a9b97de.jpg" style="width:100%">
     <img src="https://i.pinimg.com/originals/c5/7c/a6/c57ca6e48744d361afdaf9b492a65e2c.jpg" style="width:100%">
@@ -68,8 +68,8 @@
   <!--We were gonna remove the anim $(this).removeClass("run-animation").addClass("run-animation");-->
 </header>
 
-<footer>
-  <button class="to-top"><i class="fa fa-chevron-up"></i>TOP</button>
+<footer style="top:100px;"> 
+  <button style="position: relative;z-index: 0;" class="to-top"><i class="fa fa-chevron-up"></i>TOP</button>
   
   <div class="restaurant-info">
   
@@ -113,6 +113,6 @@
   </div>
 </footer>
 
-<script src="/components/script.js"></script>
+<script src="components/js/script.js"></script>
 </body>
 </html>
