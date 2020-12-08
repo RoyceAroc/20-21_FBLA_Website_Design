@@ -338,5 +338,31 @@ window.onload = function() {
         figure.appendChild(figCap);
         interest.appendChild(figure);    
     }
- 
+    let totalB = 31; //total number of images
+    for(let i=0; i<totalB; i++) {
+		let col = 0;
+        if((i+1)/totalB <= 0.25) {
+            col = 0;
+        } else if((i+1)/totalB <=0.5) {
+            col = 1;
+        } else if((i+1)/totalB <=0.75) {
+            col = 2;
+        } else {
+            col = 3;
+		}
+    	let interest = document.getElementsByClassName("columnB")[col];
+        var figure = document.createElement("figure");
+        figure.classList.add("snip0016");
+        let img = document.createElement("img");
+
+        img.src = "images/portfolio-b/" + i + ".jpeg"; 
+        
+        figure.appendChild(img);
+        let figCap = document.createElement("figcaption");
+        let inner = document.createElement("h2");
+		inner.innerHTML = " <a class=\"btn-solid-lg page-scroll\" href=\"copyright.html\">Citation</a>";
+        figCap.appendChild(inner);
+        figure.appendChild(figCap);
+        interest.appendChild(figure);    
+    }
 }
