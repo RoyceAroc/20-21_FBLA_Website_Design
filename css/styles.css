@@ -1484,7 +1484,9 @@ a:hover.back-to-top {
 		padding-right: 3.5rem;
 		padding-left: 3.5rem;
 	}
-	
+	.card:hover {
+		background-color: lightgrey;
+	}
 	.basic-3 p {
 		width: 85%;
 		margin-right: auto;
@@ -1778,7 +1780,22 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 }
-
+@media (max-width: 1100px) {
+	.operate {
+		display: none;
+	}
+	.operate1 {
+		display: block;
+	}
+}
+@media (min-width: 1100px) {
+	.operate {
+		display: block;
+	}
+	.operate1 {
+		display: none;
+	}
+}
 @media (min-width: 1500px) {
 	.navbar-custom {
 		padding: 2.125rem 5rem 2.125rem 5rem;
