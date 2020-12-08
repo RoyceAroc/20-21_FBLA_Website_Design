@@ -1469,7 +1469,9 @@ a:hover.back-to-top {
 	.header .header-content {
 		padding-top: 10.5rem;
 	}
-
+	::selection {
+		background-color: cyan;
+	  }
 	.header h1 {
 		font-size: 3rem;
 		line-height: 3.5rem;
@@ -1484,8 +1486,12 @@ a:hover.back-to-top {
 		padding-right: 3.5rem;
 		padding-left: 3.5rem;
 	}
-	.card:hover {
-		background-color: lightgrey;
+	#hover-special .card:hover {
+	background-image: linear-gradient(white, #00bfd8);
+		
+	}
+	#hover-special .card:hover p {
+		color:black;
 	}
 	.basic-3 p {
 		width: 85%;
