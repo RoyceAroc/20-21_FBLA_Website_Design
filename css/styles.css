@@ -732,7 +732,7 @@ input[type='checkbox'] {
 	border-radius: 0.5rem;
 	background: transparent;
 }
-
+.pointer:hover {cursor: pointer;}
 .cards-1 .card-image {
 	width: 6rem;
 	height: 6rem;
