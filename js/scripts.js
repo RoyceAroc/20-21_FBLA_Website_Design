@@ -308,3 +308,35 @@
 	});
 
 })(jQuery);
+
+
+window.onload = function() {
+	let total = 31; //total number of images
+	for(let i=0; i<total; i++) {
+		let col = 0;
+        if((i+1)/total <= 0.25) {
+            col = 0;
+        } else if((i+1)/total <=0.5) {
+            col = 1;
+        } else if((i+1)/total <=0.75) {
+            col = 2;
+        } else {
+            col = 3;
+		}
+    	let interest = document.getElementsByClassName("column")[col];
+        var figure = document.createElement("figure");
+        figure.classList.add("snip0016");
+        let img = document.createElement("img");
+
+        img.src = "images/portfolio-a/" + i + ".jpeg"; 
+        
+        figure.appendChild(img);
+        let figCap = document.createElement("figcaption");
+        let inner = document.createElement("h2");
+		inner.innerHTML = " <a class=\"btn-solid-lg page-scroll\" href=\"copyright.html\">Citation</a>";
+        figCap.appendChild(inner);
+        figure.appendChild(figCap);
+        interest.appendChild(figure);    
+    }
+ 
+}
