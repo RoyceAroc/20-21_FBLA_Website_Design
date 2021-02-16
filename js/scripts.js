@@ -120,12 +120,10 @@
     /* Request Form */
     $("#requestForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
             rformError();
-            rsubmitMSG(false, "Please fill all fields!");
         } else {
-            // everything looks good!
             event.preventDefault();
+            $("#requestSent").modal();
             rsubmitForm();
         }
     });
@@ -178,12 +176,10 @@
     /* Contact Form */
     $("#contactForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Please fill all fields!");
         } else {
-            // everything looks good!
             event.preventDefault();
+            $("#submitContact").modal();
             csubmitForm();
         }
     });
@@ -245,27 +241,7 @@
         }
     });
 
-    function psubmitForm() {
-        // initiate variables with form content
-		var name = $("#pname").val();
-		var email = $("#pemail").val();
-        var select = $("#pselect").val();
-        var terms = $("#pterms").val();
-        
-        $.ajax({
-            type: "POST",
-            url: "php/privacyform-process.php",
-            data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
-            success: function(text) {
-                if (text == "success") {
-                    pformSuccess();
-                } else {
-                    pformError();
-                    psubmitMSG(false, text);
-                }
-            }
-        });
-	}
+ 
 
     function pformSuccess() {
         $("#privacyForm")[0].reset();
@@ -393,3 +369,21 @@ window.onload = function() {
         interest.appendChild(figure);    
     }
 }
+
+//FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+function autoPlayYouTubeModal(){
+    var trigger = $("body").find('[data-toggle="modal"]');
+    trigger.click(function() {
+      var theModal = $(this).data( "target" ),
+      videoSRC = $(this).attr( "data-theVideo" ), 
+      videoSRCauto = videoSRC+"?autoplay=1" ;
+      $(theModal+' iframe').attr('src', videoSRCauto);
+      $(theModal+' button.close').click(function () {
+          $(theModal+' iframe').attr('src', videoSRC);
+      });   
+    });
+  }
+
+  $(document).ready(function(){
+    autoPlayYouTubeModal();
+  });
