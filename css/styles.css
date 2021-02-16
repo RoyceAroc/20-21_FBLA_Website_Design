@@ -5,7 +5,9 @@ html {
     width: 100%;
 	height: 100%;
 }
-
+.packageoption{
+	font-size: 500%;
+}
 body, p {
 	color: #626262; 
 	font: 400 0.875rem/1.375rem "Raleway", sans-serif;
