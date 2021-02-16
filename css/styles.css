@@ -1487,7 +1487,7 @@ a:hover.back-to-top {
 		padding-left: 3.5rem;
 	}
 	#hover-special .card:hover {
-	background-image: linear-gradient(white, #00bfd8);
+	background: #edf5ef;
 		
 	}
 	#hover-special .card:hover p {
@@ -2088,4 +2088,12 @@ a:hover.back-to-top {
 		  flex: 100%;
 		  max-width: 100%;
 		}
+	  }
+
+	  .lightbox-basic::-webkit-scrollbar {
+		display: none;
+	  }
+	  .lightbox-basic	 {
+		-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;  /* Firefox */
 	  }
